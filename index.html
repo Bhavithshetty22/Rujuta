@@ -1,0 +1,71 @@
+
+ <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Our Memories</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <script src="script1.js"></script>
+         <!-- Password Protection Overlay -->
+    <div id="passwordOverlay" class="overlay">
+        <div class="password-container">
+            <h2>Enter Password</h2>
+            <input type="password" id="passwordInput" placeholder="Password" />
+            <button onclick="checkPassword()">Submit</button>
+            <p id="error-message"></p>
+        </div>
+    </div>
+        <!-- Header Section -->
+        <header>
+            <h1>Our Memories</h1>
+        </header>
+    
+        <!-- Memories Section -->
+        <section id="memories">
+            <div class="memory-grid">
+                <div class="memory-item">
+                    <a href="./page1.html"><img src="./bandra.jpeg" alt="Memory 1"></a>
+                    <p>Bandra date</p>
+                </div>
+                <div class="memory-item">
+                    <a href="./page2.html"><img src="./home2.jpeg" alt="Memory 2"></a>
+                    <p>Home</p>
+                </div>
+                <div class="memory-item">
+                    <a href="./page1.html"><img src="memory3.jpg" alt="Memory 3"></a>
+                    <p>Caption 3</p>
+                </div>
+                <!-- Add more memory items as needed -->
+            </div>
+        </section>
+    
+        <!-- Note Section -->
+        <section id="note">
+            <div class="note-content">
+                <h2>A Note for You</h2>
+                <p>Happy three months twin!!!I am very lucky to have the most craziest girl as my girlfriend.This is a small website I have made with memories of us in these three months.Thankyou for everything you did</br>Love you so fuckking much</p>
+            </div>
+        </section>
+    
+        <!-- Footer -->
+        <footer>
+            <p>Always with you</p>
+        </footer>
+        <script>
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        </script>
+        
+    </body>
+    </html>
+    
+
